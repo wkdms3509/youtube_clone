@@ -15,7 +15,8 @@
 
   /* Font size */
   --font-large: 18px;
-  --font-medium: 14px;
+  --font-medium: 16px;
+  --font-medium2: 14px;
   --font-small: 12px;
   --font-micro: 10px;
 }
@@ -30,7 +31,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-ul {
+ul,
+li {
   list-style: none;
 }
 
@@ -98,7 +100,7 @@ header .icons .fa-search {
 }
 
 .info .video__metadata .titleAndBtn .title {
-  font-size: var(--font-medium);
+  font-size: var(--font-medium2);
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -113,4 +115,29 @@ header .icons .fa-search {
 .info .video__metadata .views {
   font-size: var(--font-small);
   color: var(--grey-dark-color);
+}
+
+/* information - video__actions */
+.info .video__actions {
+  display: flex;
+  justify-content: space-around;
+  margin: var(--padding) 0;
+}
+
+.info .video__actions li button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--grey-dark-color);
+  font-size: var(--font-small);
+}
+
+.info .video__actions li button i {
+  margin: 0 auto;
+  margin-bottom: calc(var(--padding) / 2);
+  font-size: var(--font-medium);
+}
+
+.info .video__actions li button:hover i {
+  color: var(--blue-color);
 }
