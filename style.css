@@ -141,3 +141,44 @@ header .icons .fa-search {
 .info .video__actions li button:hover i {
   color: var(--blue-color);
 }
+
+/* information - video__channel */
+
+.info .video__channel {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--grey-light-color);
+}
+
+.info .video__channel .metadata {
+  display: flex;
+  align-items: center;
+}
+
+.info .video__channel .metadata img {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+}
+
+.info .video__channel .metadata .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info .video__channel .metadata .info .name {
+  font-size: var(--font-medium2);
+}
+
+.info .video__channel .metadata .info .subscribers {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.info .video__channel .subscribe {
+  font-size: var(--font-medium2);
+  color: var(--grey-dark-color);
+  text-transform: uppercase;
+  color: var(--red-color);
+}
