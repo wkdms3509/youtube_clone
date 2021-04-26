@@ -80,7 +80,7 @@ header .icons .fa-search {
 }
 
 /* information */
-.info {
+body > .info {
   padding: var(--padding);
 }
 
@@ -147,6 +147,7 @@ header .icons .fa-search {
 .info .video__channel {
   display: flex;
   justify-content: space-between;
+  padding: var(--padding);
   border-top: 1px solid var(--grey-light-color);
   border-bottom: 1px solid var(--grey-light-color);
 }
@@ -181,4 +182,52 @@ header .icons .fa-search {
   color: var(--grey-dark-color);
   text-transform: uppercase;
   color: var(--red-color);
+}
+
+/* upNext */
+.upNext {
+  padding: var(--padding);
+}
+
+.upNext > .title {
+  font-size: var(--font-medium2);
+  color: var(--grey-dark-color);
+  margin-bottom: calc(var(--padding) / 2);
+}
+
+.upNext .item {
+  display: flex;
+  margin-top: var(--padding);
+  margin-bottom: var(--padding);
+}
+
+.upNext .item .img {
+  flex: 1 1 35%;
+  margin-right: var(--padding);
+}
+
+.upNext .item .img img {
+  width: 100%;
+}
+
+.upNext .item .info {
+  flex: 1 1 60%;
+}
+.upNext .item .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.upNext .item .info .title {
+  font-size: var(--font-small);
+}
+
+.upNext .item .info .name {
+}
+
+.upNext .item .info .views {
+}
+
+.upNext .item .moreBtn {
+  flex: 1 1 5%;
 }
