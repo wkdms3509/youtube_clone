@@ -10,9 +10,13 @@
   --grey-dark-color: #909090;
   --grey-light-color: #e0e0e0;
   --deep-gray: #252525;
+  --dark-gray: #121212;
+  --light-gray: #363636;
 
   /* Size */
+  --search-width: 100px;
   --padding: 12px;
+  --padding2: 6px;
   --avatar-size: 36px;
   --avatar-size2: 30px;
 
@@ -61,6 +65,7 @@ header {
   color: var(--white-color);
 }
 
+/* header logo */
 header .logo {
   font-size: var(--font-large);
 }
@@ -80,6 +85,37 @@ header .logo .title {
   cursor: pointer;
 }
 
+/* header searchBox */
+header .searchBox {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+header .searchBox .input {
+  width: calc(var(--search-width) * 5);
+  padding: var(--padding2);
+  padding-right: var(--padding);
+  background-color: var(--dark-gray);
+  border: none;
+  outline: none;
+  margin-left: var(--padding2);
+}
+
+header .searchBox button {
+  width: 60px;
+  padding-right: 18px;
+  padding-top: calc(var(--padding) / 2);
+  padding-bottom: calc(var(--padding) / 2);
+  background-color: var(--light-gray);
+  color: var(--grey-light-color);
+}
+
+header .searchBox i {
+  margin-left: calc(var(--padding) * 1.5);
+}
+
+/* header icons */
 header .icons {
   width: 50%;
   display: flex;
@@ -285,10 +321,17 @@ header .icons img {
 }
 
 @media screen and (min-width: 768px) {
-  header .logo {
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  /* header logo */
+  header .logo {
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 30%;
   }
 
   header .logo i.fa-bars {
@@ -300,11 +343,28 @@ header .icons img {
     margin-right: calc(var(--padding) / 4);
   }
 
+  /* header searchBox */
+  header .searchBox {
+    display: flex;
+  }
+
+  header .searchBox .input {
+    display: block;
+    flex: 1 1 40%;
+    color: var(--white-color);
+  }
+
+  /* header icons */
   header .icons {
-    width: 100%;
+    width: 30%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    flex: 1 1 30%;
+  }
+
+  header .icons .fa-microphone {
+    display: none;
   }
 
   header .icons i {
@@ -313,6 +373,7 @@ header .icons img {
     cursor: pointer;
   }
 
+  /* infoAndUpNext */
   .infoAndUpNext {
     flex-direction: row;
     margin: var(--padding) 0;
