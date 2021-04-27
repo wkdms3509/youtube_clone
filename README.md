@@ -30,4 +30,12 @@
 
 HTML, CSS, JavaScript
 
-## Point of Interest
+## Point of Interest 및 느낀 점
+
+1. 텍스트가 적정 길이 이상이 되면 일부가 숨겨져서 보이는 기능
+
+- 이전까지는 **overflow:hidden; text-overflow:ellipsis; white-space:nowrap;** 를 이용하여 텍스트의 길이를 제한하였는데 이번에는 **display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;** 속성을 적용해보았다. 적정 길이 이상이 되면 자동으로 나머지 테스트가 숨겨지고 이와 함께 버튼 태그에 자바스크립트 속성을 추가하여 버튼을 누르면 나머지 텍스트가 나타나도록 하였다.
+
+- 새로운 CSS 속성을 사용하였는데 오히려 텍스트 줄 갯수를 직접 설정할 수 있어서 더 사용이 편리하고 효율적이라는 생각이 들었다.
+
+2. 화면을 보고 디자인 및 기능 구현을 어느정도 혼자서 할 수 있지만 아직까지는 코드의 길이가 너무 길고 자칫 낭비로 보일 수 있을 정도여서 좀 더 효율적으로 html, css, js 코드를 작성할 수 있도록 구글링과 mdn 등의 사이트를 보며 공부 해야겠다. 또한 이 유튜브 클론코딩은 정말 간단한 페이지를 작업한 것이기 때문에 이후에는 더 다양한 페이지와 유튜브의 api를 가져와서 사용해보고 싶다.
