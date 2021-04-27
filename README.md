@@ -6,20 +6,25 @@
 
 ## 모바일 실행화면
 
-- 아이폰 5/SE
-  ![아이폰5E](https://user-images.githubusercontent.com/63761624/116227724-687b3900-a78f-11eb-8fb6-4920c1fe3933.PNG)
+1. 아이폰 5/SE (320 X 568)
 
-- 아이폰 6,7,8
-  ![아이폰6,7,8](https://user-images.githubusercontent.com/63761624/116227898-98c2d780-a78f-11eb-9e78-d5973051bcb1.PNG)
+   ![아이폰5E](https://user-images.githubusercontent.com/63761624/116227724-687b3900-a78f-11eb-8fb6-4920c1fe3933.PNG)
 
-- 아이폰 6,7,8 PLUS
-  ![아이폰6,7,8 PLUS](https://user-images.githubusercontent.com/63761624/116227989-b09a5b80-a78f-11eb-8b1b-2d151ca9adf8.PNG)
+2. 아이폰 6,7,8 (375 X 667)
 
-- 아이폰 X
-  ![아이폰X](https://user-images.githubusercontent.com/63761624/116228044-c0b23b00-a78f-11eb-80ab-ee39eddd0e54.PNG)
+   ![아이폰6,7,8](https://user-images.githubusercontent.com/63761624/116227898-98c2d780-a78f-11eb-9e78-d5973051bcb1.PNG)
 
-- 갤럭시 S5
-  ![갤럭시S5](https://user-images.githubusercontent.com/63761624/116228102-d32c7480-a78f-11eb-8d35-58298d108e85.PNG)
+3. 아이폰 6,7,8 PLUS (414 X 736)
+
+   ![아이폰6,7,8 PLUS](https://user-images.githubusercontent.com/63761624/116227989-b09a5b80-a78f-11eb-8b1b-2d151ca9adf8.PNG)
+
+4. 아이폰 X (375 X 812)
+
+   ![아이폰X](https://user-images.githubusercontent.com/63761624/116228044-c0b23b00-a78f-11eb-80ab-ee39eddd0e54.PNG)
+
+5. 갤럭시 S5 (360 X 640)
+
+   ![갤럭시S5](https://user-images.githubusercontent.com/63761624/116228102-d32c7480-a78f-11eb-8d35-58298d108e85.PNG)
 
 ## 사용 언어
 
