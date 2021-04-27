@@ -404,11 +404,10 @@ header .icons img {
 
   /* header icons */
   header .icons {
-    width: 30%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex: 1 1 30%;
+    flex: 1 1 20%;
   }
 
   header .icons .fa-microphone,
