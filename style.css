@@ -9,12 +9,15 @@
   --blue-color: #045fd4;
   --grey-dark-color: #909090;
   --grey-light-color: #e0e0e0;
+  --deep-gray: #252525;
 
   /* Size */
   --padding: 12px;
   --avatar-size: 36px;
+  --avatar-size2: 30px;
 
   /* Font size */
+  --font-large2: 22px;
   --font-large: 18px;
   --font-medium: 16px;
   --font-medium2: 14px;
@@ -54,7 +57,7 @@ header {
   padding: var(--padding);
   padding-left: calc(var(--padding) * 2);
   padding-right: calc(var(--padding) * 2);
-  background-color: var(--black-color);
+  background-color: var(--deep-gray);
   color: var(--white-color);
 }
 
@@ -62,12 +65,39 @@ header .logo {
   font-size: var(--font-large);
 }
 
-header .logo i {
-  color: var(--red-color);
+header .logo i.fa-bars {
+  margin-right: var(--padding);
+  cursor: pointer;
 }
 
-header .icons .fa-search {
-  margin-right: var(--padding);
+header .logo i.fa-youtube {
+  color: var(--red-color);
+  font-size: var(--font-large2);
+  cursor: pointer;
+}
+
+header .logo .title {
+  cursor: pointer;
+}
+
+header .icons {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .icons i {
+  margin-right: calc(var(--padding) * 2);
+  font-size: var(--font-medium);
+  cursor: pointer;
+}
+
+header .icons img {
+  width: var(--avatar-size2);
+  height: var(--avatar-size2);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 /* Video Player */
@@ -84,7 +114,7 @@ header .icons .fa-search {
 
 /* information */
 .infoAndUpNext > .info {
-  padding: var(--padding);
+  padding: calc(var(--padding) * 2);
 }
 
 .infoAndUpNext .info .video__metadata .hashtags {
@@ -255,9 +285,39 @@ header .icons .fa-search {
 }
 
 @media screen and (min-width: 768px) {
+  header .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header .logo i.fa-bars {
+    margin-right: calc(var(--padding) * 2);
+  }
+
+  header .logo i.fa-youtube {
+    transform: translateY(0px);
+    margin-right: calc(var(--padding) / 4);
+  }
+
+  header .icons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  header .icons i {
+    margin-right: calc(var(--padding) * 2);
+    font-size: var(--font-medium);
+    cursor: pointer;
+  }
+
   .infoAndUpNext {
     flex-direction: row;
     margin: var(--padding) 0;
+    margin-left: calc(var(--padding) * 6);
+    margin-right: calc(var(--padding) * 6);
   }
 
   .infoAndUpNext .upNext {
