@@ -61,8 +61,6 @@ header {
   display: flex;
   justify-content: space-between;
   padding: var(--padding);
-  padding-left: calc(var(--padding) * 2);
-  padding-right: calc(var(--padding) * 2);
   background-color: var(--deep-gray);
   color: var(--white-color);
 }
@@ -133,7 +131,6 @@ header .icons {
 }
 
 header .icons i {
-  margin-right: calc(var(--padding) * 2);
   font-size: var(--font-medium);
   cursor: pointer;
 }
@@ -160,6 +157,7 @@ header .icons img {
 /* information */
 .infoAndUpNext > .info {
   padding: calc(var(--padding) * 2);
+  padding-bottom: 0;
 }
 
 .infoAndUpNext .info .video__metadata .hashtags {
@@ -265,7 +263,7 @@ header .icons img {
 }
 
 .infoAndUpNext .info .video__channel .subscribe {
-  padding: var(--padding);
+  padding: calc(var(--padding) / 2);
   font-size: var(--font-medium2);
   text-transform: uppercase;
   color: var(--white-color);
@@ -318,6 +316,10 @@ header .icons img {
 .infoAndUpNext .upNext .item .info .title {
   font-size: var(--font-medium2);
   margin-bottom: var(--padding);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .infoAndUpNext .upNext .item .info .name,
@@ -331,11 +333,42 @@ header .icons img {
   flex-direction: column;
 }
 
+@media screen and (max-width: 320px) {
+  .infoAndUpNext .video__channel .subscribe {
+    padding: (var(--padding) / 4);
+  }
+  header .icons {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  header .icons i,
+  header .icons img {
+    margin-left: var(--padding);
+  }
+
+  header .icons img {
+    margin-right: var(--padding);
+  }
+
+  header .icons i.fa-microphone,
+  header .icons i.fa-video,
+  header .icons i.fa-buromobelexperte {
+    display: none;
+  }
+
+  .infoAndUpNext .info {
+    padding-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: calc(var(--padding) * 2);
+    padding-right: calc(var(--padding) * 2);
   }
 
   /* header logo */
@@ -389,6 +422,9 @@ header .icons img {
     cursor: pointer;
   }
 
+  .infoAndUpNext .info {
+    padding: calc(var(--padding) * 2);
+  }
   /* infoAndUpNext */
   .infoAndUpNext {
     flex-direction: row;
